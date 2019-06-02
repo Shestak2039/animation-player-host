@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>animation-player</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="assets/images/Shape.png" alt="" class="header__img-left">
+    <h2 class="title">CodeJam - animation-player</h2>
+    <img src="assets/images/Shap.png" alt="" class="header__img-right">
+  </header>
+  <main class="wrapper">
+    <div class="menu">
+      <div class="operations">
+        <button id="paint-bucket" class="button">
+          <img class="button__img" src="assets/images/i1.PNG" alt="">
+          <span class="button__text">Paint bucket</span>
+        </button>
+        <button id="choose-color" class="button">
+          <img class="button__img" src="assets/images/i2.PNG" alt="">
+          <span class="button__text">Choose color</span>
+        </button>
+        <button id="transform" class="button">
+          <img class="button__img" src="assets/images/i4.PNG" alt="">
+          <span class="button__text">Transform</span>
+        </button>
+        <button id="cancel" class="button">
+          <img class="button__img" src="assets/images/Actions-edit-delete-icon.png" alt="">
+          <span class="button__text">Cancel(mouse)</span>
+        </button>
+      </div>
+      <div class="colors">
+        <button class="button">
+          <div id="color-current" class="colors__circle color-current"></div>
+          <span class="button__text">Current color</span>
+        </button>
+        <button class="button">
+          <div id="color-prev" class="colors__circle color-prev"></div>
+          <span class="button__text">Prev color</span>
+        </button>
+        <div class="colors-for-choose">
+          <div class="colors-for-choose__item"></div>
+          <div class="colors-for-choose__item"></div>
+          <div class="colors-for-choose__item"></div>
+          <div class="colors-for-choose__item"></div>
+          <div class="colors-for-choose__item"></div>
+          <div class="colors-for-choose__item"></div>
+          <div class="colors-for-choose__item"></div>
+          <div class="colors-for-choose__item"></div>
+        </div>
+      </div>
+    </div>
+    <div class="frames">
+      <div class="frames__add-frame">
+        <p>Add new frame</p>
+      </div>
+    </div>
+    <ul id="canvas" class="canvas">
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+      <li class="canvas__item"></li>
+      <li class="canvas__item-none"></li>
+    </ul>
+    <div class="preview">
+      <div class="animation-field"></div>
+      <div class="fps-container">
+        <input id="speed" type="range" min="0" max="24" step="1" value="12">
+        <p>12 FPS</p>
+      </div>
+      <div class="button-container">
+        <button id="start-animation" class="start-animation">Start animation</button>
+        <button id="stop-animation" class="stop-animation">Stop animation</button>
+        <button id="fullscreen" class="fullscreen">Fullscreen</button>
+      </div>
+    </div>
+  </main>
+  <script src="./dist/app.bundle.js"></script>
+</body>
+
+</html>
